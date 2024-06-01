@@ -28,7 +28,6 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 :root {
@@ -101,7 +100,7 @@ header {
 }
 
 header .content {
-    width: 800px;
+    width: 100%;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -296,7 +295,7 @@ header * {
     margin: auto;
     width: 222px;
     height: 48px;
-    line-height: 24px;
+    line-height: 16px;
     background: var(--mainColor);
     color: #fff;
     transition: background 0.5s;
@@ -455,26 +454,21 @@ footer p a {
     color: #fff;
 }
 
-
 /* 4- Responsive */
 /* 4.0- Meduim Screen + Tablet */
 @media screen and (max-width:1000px) {
     header {
         height: 80vh;
     }
-
     #navbar img {
         margin-left: 20px;
     }
-
     #navbar ul {
         margin-right: 20px;
     }
-
     #navbar ul li a {
         padding: 10px;
     }
-
     header .content h1 {
         font-size: 28px;
     }
@@ -482,12 +476,10 @@ footer p a {
     #about {
         height: auto;
     }
-
     .about-content-item1 p {
         font-size: 16px;
         line-height: 1.4;
     }
-
     .about-content-item2 img {
         width: 300px;
     }
@@ -495,11 +487,9 @@ footer p a {
     #offers {
         height: auto;
     }
-
     .offers-item img {
         width: 150px;
     }
-
     .offers-item-desc h3 {
         font-size: 18px;
     }
@@ -507,14 +497,12 @@ footer p a {
     .menu-title p {
         margin-bottom: 8px;
     }
-
     .menu-items {
         /* display: block; */
         flex-direction: column;
         align-items: center;
         margin-bottom: 8px;
     }
-
     .menu-items-right {
         margin-top: -50px
     }
@@ -522,20 +510,16 @@ footer p a {
     .daytime-item {
         transform: scale(0.9);
     }
-
     .daytime-item img {
         width: 48px;
         margin: 20px 18px 10px;
     }
-
     .daytime-item:nth-child(3) img {
         width: 66px;
     }
-
     .daytime-item h3 {
         font-size: 22px;
     }
-
     .daytime-item:nth-child(4) h3 {
         margin-top: 6px;
     }
@@ -544,36 +528,49 @@ footer p a {
         flex-direction: column;
         text-align: center;
     }
-
     .contact-content-info,
     .contact-content form {
         width: 70%;
     }
-
     .contact-content-info {
         margin-left: 0px;
     }
 }
 
+@media  screen and (max-width: 800px) {
+    .about-content-item1 {
+        margin-right: 0;
+    }
+    .about-content-item2 img {
+        display: none;
+    }
+}
+
 /* 4.1- Mobile Devices */
 @media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
     #navbar {
         flex-direction: column;
     }
-
     #navbar nav {
         margin-bottom: 20px;
     }
-
     #navbar img {
         margin-bottom: 18px;
+        margin-left: 0;
     }
-
+    #navbar ul {
+        margin-right: 0;
+    }
+    #navbar ul li a {
+        padding: 8px 6px;
+    }
     header .content h1 {
         margin: 20px 0;
         font-size: 18px;
     }
-
     header .content p {
         font-size: 12px
     }
@@ -582,18 +579,9 @@ footer p a {
         flex-direction: column;
     }
 
-    .about-content-item1 {
-        margin-right: 0;
-    }
-
-    .about-content-item2 img {
-        display: none;
-    }
-
     .offers-items {
         flex-direction: column;
     }
-
     .offers-item {
         margin: 12px 0;
     }
@@ -601,19 +589,16 @@ footer p a {
     .menu-item {
         margin: 28px 8px;
     }
-
     .menu-item img {
         width: 60px;
+        height: 60px;
     }
-
     .menu-item-content h3 {
         font-size: 16px;
     }
-
     .menu-item-content p {
         font-size: 14px;
     }
-
     .menu-btn {
         font-size: 12px;
         width: 180px;
@@ -624,13 +609,16 @@ footer p a {
     #daytime {
         padding: 12px 0;
     }
-
     .daytime-items {
         flex-direction: column;
     }
 
     .gallery-content-title h2 {
         font-size: 22px;
+    }
+    .gallery-content .gallery-content-images img {
+        width: 220px;
+        height: 180px;
     }
 
     .contact-content-info,
@@ -641,5 +629,4 @@ footer p a {
     footer p {
         font-size: 10px;
     }
-
 }
