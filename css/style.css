@@ -66,7 +66,7 @@ a {
 /* 3.0- Header Section */
 header {
     padding: 0.1px;
-    height: 100vh;
+    height: 600px;
     background: url(../images/home_bg.jpeg) center;
     background-size: cover;
     position: relative;
@@ -457,9 +457,6 @@ footer p a {
 /* 4- Responsive */
 /* 4.0- Meduim Screen + Tablet */
 @media screen and (max-width:1000px) {
-    header {
-        height: 80vh;
-    }
     #navbar img {
         margin-left: 20px;
     }
@@ -554,7 +551,7 @@ footer p a {
 /* 4.1- Mobile Devices */
 @media screen and (max-width: 600px) {
     header {
-        height: 100vh;
+        height: 700px;
     }
     #navbar {
         flex-direction: column;
@@ -612,6 +609,7 @@ footer p a {
         width: 180px;
         height: 38px;
         padding: 8px;
+        line-height: 22px;
     }
 
     #daytime {
