@@ -564,7 +564,14 @@ footer p a {
         margin-bottom: 20px;
     }
     #navbar img {
+        margin-left: 0;
         margin-bottom: 18px;
+    }
+    #navbar ul {
+        margin-right: 0;
+    }
+    #navbar ul li a {
+        padding: 8px 6px;
     }
 
     header .content h1 {
