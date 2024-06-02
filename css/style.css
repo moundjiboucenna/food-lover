@@ -13,7 +13,6 @@
     4- Responsive
         4.0- Meduim Screen + Tablet
         4.1- Mobile Devices
-
 /
 /* 1- General Styles */
 .pd-y {
@@ -63,12 +62,12 @@ a {
     border-radius: 15px;
 }
 
-
 /* 3- Sections */
 /* 3.0- Header Section */
 header {
+    padding: 0.1px;
     height: 100vh;
-    background: url(images/home_bg.jpeg) center;
+    background: url(../images/home_bg.jpeg) center;
     background-size: cover;
     position: relative;
 }
@@ -198,7 +197,7 @@ header * {
 #offers {
     height: auto;
     padding: 32px 0 48px;
-    background: url(images/offer-background.jpg) center center / cover fixed;
+    background: url(../images/offer-background.jpg) center center / cover fixed;
 }
 
 .offers-title {
@@ -284,7 +283,7 @@ header * {
     margin-bottom: 12px;
 }
 
-.menu-item-content h3 span {
+.menu-item-content h3 span { 
     color: var(--mainColor);
     float: right;
 }
@@ -293,7 +292,7 @@ header * {
     display: block;
     text-align: center;
     margin: auto;
-    width: 222px;
+    width: 228px;
     height: 48px;
     line-height: 16px;
     background: var(--mainColor);
@@ -308,7 +307,7 @@ header * {
 /* 3.4- Daytime Section */
 #daytime {
     padding: 32px 0;
-    background: url(images/daytime_bg.jpeg) center center / cover fixed;
+    background: url(../images/daytime_bg.jpeg) center center / cover fixed;
     color: #fff;
     text-align: center;
 }
@@ -330,7 +329,7 @@ header * {
 
 /* 3.5- Gallery Section */
 #gallery {
-    background: url(images/offer-background.jpg) center center /cover fixed;
+    background: url(../images/offer-background.jpg) center center /cover fixed;
 }
 
 .gallery-content .gallery-content-title {
@@ -374,7 +373,7 @@ header * {
 
 .contact-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
     align-items: center;
 }
 
@@ -431,6 +430,7 @@ header * {
     background: #e3e3e3;
 }
 
+
 .contact-content form button.btn {
     background: var(--mainColor);
     color: #fff;
@@ -471,6 +471,11 @@ footer p a {
     }
     header .content h1 {
         font-size: 28px;
+    }
+    header .content {
+        top: 60%;
+        left: 60%;
+        transform: translate(-60%,-60%);
     }
 
     #about {
@@ -553,26 +558,22 @@ footer p a {
     }
     #navbar {
         flex-direction: column;
+        margin-top: 12px;
     }
     #navbar nav {
         margin-bottom: 20px;
     }
     #navbar img {
         margin-bottom: 18px;
-        margin-left: 0;
     }
-    #navbar ul {
-        margin-right: 0;
-    }
-    #navbar ul li a {
-        padding: 8px 6px;
-    }
+
     header .content h1 {
         margin: 20px 0;
-        font-size: 18px;
+        font-size: 16px;
+        letter-spacing: 0.6px;
     }
     header .content p {
-        font-size: 12px
+        font-size: 11px
     }
 
     .about-content {
